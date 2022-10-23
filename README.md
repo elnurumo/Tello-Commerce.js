@@ -1,3 +1,3 @@
 # Tello-Commerce.js
 
-Link: [https://elnur-tello.netlify.app/]
+Link: https://elnur-tello.netlify.app/
