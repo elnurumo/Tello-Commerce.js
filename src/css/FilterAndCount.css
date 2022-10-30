@@ -1,0 +1,106 @@
+.orderBy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 170px;
+  padding: 10px 16px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  position: relative;
+  color: #4f4f4f;
+  justify-self: flex-end;
+  margin-left: 75rem;
+  cursor: pointer;
+}
+
+.orderBy span.current {
+  font-weight: 400;
+  font-size: 1.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.orderBy .orderDropdown {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  z-index: 100;
+}
+
+.orderBy .orderDropdown .option {
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  white-space: nowrap;
+}
+
+.orderBy .orderDropdown .option:hover {
+  background-color: #2dd06e;
+  color: white;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  .orderBy {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 170px;
+    padding: 10px 16px;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    position: relative;
+    color: #4f4f4f;
+    justify-self: flex-end;
+    cursor: pointer;
+  }
+  .orderBy span.current {
+    font-weight: 400;
+    font-size: 1.5rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .orderBy .orderDropdown {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    z-index: 100;
+  }
+  .orderBy .orderDropdown .option {
+    padding: 8px 16px;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    white-space: nowrap;
+  }
+  .orderBy .orderDropdown .option:hover {
+    color: #2dd06e;
+  }
+}

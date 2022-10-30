@@ -1,0 +1,26 @@
+.marka_area {
+    background: #F5F5F7;
+    padding: 5rem 5rem;
+
+    .markas {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .marka_area {
+        display: none;
+        background: #F5F5F7;
+        padding: 5rem 5rem;
+
+        .markas {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+
+        }
+    }
+}

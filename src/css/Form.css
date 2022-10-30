@@ -1,0 +1,71 @@
+.login-wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-wrapper .title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #4f4f4f;
+}
+
+.login-wrapper .or {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #bdbdbd;
+  margin-top: 32px;
+}
+
+.login-wrapper .login-form {
+  max-width: 310px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-wrapper .login-form .login-btn {
+  background-color: #20b269;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 48px;
+}
+
+.login-wrapper .login-form .forgot-password {
+  margin-top: 8px;
+  color: #2d9cdb;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+@media (max-width: 576px) {
+  .login-wrapper {
+    width: 100%;
+  }
+  .login-wrapper .or {
+    margin-top: 16px;
+  }
+  .login-wrapper .login-form .login-btn {
+    margin-top: 30px;
+  }
+}

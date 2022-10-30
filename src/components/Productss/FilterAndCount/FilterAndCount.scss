@@ -1,0 +1,99 @@
+@import '../../../sass/_variable.scss';
+
+.orderBy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    padding: 10px 16px;
+    border: 1px solid $clr-gray-4;
+    border-radius: 8px;
+    position: relative;
+    color: $clr-gray-2;
+    justify-self: flex-end;
+    margin-left: 75rem;
+    cursor: pointer;
+
+    span.current {
+        font-weight: 400;
+        font-size: 1.5rem;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .orderDropdown {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        transform: translateY(100%);
+        border: 1px solid $clr-gray-4;
+        border-radius: 8px;
+        z-index: 100;
+
+        .option {
+            padding: 8px 16px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: relative;
+            transition: all .1s ease;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: $clr-brand;
+                color: white;
+                overflow: hidden;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .orderBy {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 170px;
+        padding: 10px 16px;
+        border: 1px solid $clr-gray-4;
+        border-radius: 8px;
+        position: relative;
+        color: $clr-gray-2;
+        justify-self: flex-end;
+        // margin-left: 75rem;
+        cursor: pointer;
+
+        span.current {
+            font-weight: 400;
+            font-size: 1.5rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .orderDropdown {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            transform: translateY(100%);
+            border: 1px solid $clr-gray-4;
+            border-radius: 8px;
+            z-index: 100;
+
+            .option {
+                padding: 8px 16px;
+                cursor: pointer;
+                position: relative;
+                transition: all .1s ease;
+                white-space: nowrap;
+
+                &:hover {
+                    color: $clr-brand;
+                }
+            }
+        }
+    }
+}

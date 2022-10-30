@@ -1,0 +1,177 @@
+.footer_area {
+    display: flex;
+    flex-direction: column;
+    background: #262626;
+    max-width: 140rem;
+    margin: 0 auto;
+
+    .footer_part1 {
+        display: flex;
+
+        .logo_social_area {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 27px;
+            padding: 4.6rem 7.5rem;
+
+            .social_media {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+        .social_abouts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 27px;
+            padding: 4.6rem 7.5rem;
+            color: white;
+
+
+            .header_about {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .about {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: white;
+                transition: 250ms;
+
+                &:hover {
+                    color: #2DD06E;
+                }
+            }
+        }
+
+        .mob {
+            display: none;
+        }
+    }
+
+
+    .copyright_area {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid white;
+        padding: 24px;
+
+        .copyright {
+            display: flex;
+            gap: 40px;
+
+            h6 {
+                color: white;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .footer_area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #262626;
+
+        .footer_part1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .logo_social_area {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 27px;
+                padding: 4.6rem 7.5rem;
+
+                .social_media {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 15px;
+                }
+            }
+
+            .social_abouts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 27px;
+                padding: 4.6rem 7.5rem;
+                color: white;
+
+
+                .header_about {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                .about {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: white;
+                    transition: 250ms;
+
+                    &:hover {
+                        color: #2DD06E;
+                    }
+                }
+            }
+
+            .mob {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+                h6 {
+                    color: white;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+
+        .copyright_area {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid white;
+            padding: 24px;
+
+            .copyright {
+                display: flex;
+                gap: 40px;
+
+                h6 {
+                    color: white;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
+            .desk {
+                display: none;
+            }
+        }
+    }
+}

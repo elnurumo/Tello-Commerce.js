@@ -1,0 +1,26 @@
+@import "../sass/variable";
+@import "../components/Home/_Home.scss";
+@import "../components/Product/Product";
+@import "../components/Productss/Products";
+@import "../components/Basket/Basket";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./variable";
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: $ff-main;
+}
+
+.css-mp8d9x-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    background-color: $clr-brand !important;
+}

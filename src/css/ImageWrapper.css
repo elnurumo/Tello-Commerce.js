@@ -1,0 +1,27 @@
+.img-wrapper {
+  width: 50%;
+  text-align: center;
+}
+
+.img-wrapper .navigation {
+  margin-top: 36px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #4f4f4f;
+}
+
+.img-wrapper .navigation a {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #2d9cdb;
+  margin-left: 4px;
+}
+
+@media (max-width: 576px) {
+  .img-wrapper {
+    width: 100%;
+  }
+  .img-wrapper img {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+ @import "../../../../sass/variable";
+
+ .login-wrapper {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     .title {
+         font-weight: 500;
+         font-size: 1.5rem;
+         color: $clr-gray-2;
+     }
+
+     .or {
+         font-weight: 500;
+         font-size: 1.5rem;
+         color: $clr-gray-4;
+         margin-top: 32px;
+     }
+
+     .login-form {
+         max-width: 310px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+
+         .login-btn {
+             background-color: $pressed-brand;
+             padding: 16px 32px;
+             font-weight: 500;
+             font-size: 1.5rem;
+             color: #FFFFFF;
+             border: none;
+             border-radius: 8px;
+             width: 100%;
+             cursor: pointer;
+             margin-top: 48px;
+         }
+
+         .forgot-password {
+             margin-top: 8px;
+             color: $clr-link;
+             font-weight: 500;
+             font-size: 1.5rem;
+             text-align: end;
+         }
+     }
+ }
+
+ @media(max-width:576px) {
+     .login-wrapper {
+         width: 100%;
+
+         .or {
+             margin-top: 16px;
+         }
+
+         .login-form {
+             .login-btn {
+                 margin-top: 30px;
+             }
+         }
+     }
+ }

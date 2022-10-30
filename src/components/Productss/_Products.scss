@@ -1,0 +1,271 @@
+@import "../Productss/FilterBrend/Filter";
+
+.products_section_area {
+    max-width: 125rem;
+    margin: 0 auto;
+    width: 94%;
+
+    .filter_and_count_area {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 93%;
+
+        .select-disabled {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 176px;
+            height: 40px;
+            border: 1px solid #BDBDBD;
+            border-radius: 8px;
+            opacity: 0.5;
+            cursor: no-drop;
+            z-index: -1;
+        }
+
+        .count_area {
+            .count {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .filter_area {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 176px;
+            height: 40px;
+            border: 1px solid #BDBDBD;
+            border-radius: 8px;
+            cursor: pointer;
+
+            .filter {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .product_area {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .product_and_filter {
+        display: flex;
+
+        .filter_brend_area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            width: 280px;
+            height: 50px;
+            // border-bottom: 1px solid rgba(0, 0, 0, .12);
+            cursor: pointer;
+
+            .brend_header {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #4F4F4F;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .same_products_parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4rem;
+
+        .same_products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+
+            .card {
+                margin: 10px;
+                width: 260px;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+
+                .image {
+                    img {
+                        max-width: 100%;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+                }
+
+                .content {
+                    padding: 20px 10px;
+                }
+            }
+
+            .product {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                margin-top: 3rem;
+                margin-right: 2.5rem;
+                width: 268px;
+                padding: 0;
+                box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+                cursor: pointer;
+                border-radius: 4px;
+
+                .heart {
+                    position: absolute;
+                    right: 1rem;
+                    top: 1rem;
+                    width: 4rem;
+
+                    // &:hover {
+                    //     color: #deeppink;
+                    // }
+
+                }
+
+                img {
+                    align-self: center;
+                    object-fit: contain;
+                    width: 270px;
+                    height: 200px;
+                }
+
+                h3 {
+                    color: #333333;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-top: 2rem;
+                    padding: 0 2rem;
+
+                    .bold {
+                        font-weight: bold;
+                    }
+                }
+
+                .product_rating {
+                    display: flex;
+                    margin: 1.5rem 0;
+                    padding: 0 2rem;
+
+                    .rating {
+                        font-weight: 400;
+                        color: gray;
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-left: 1.5rem;
+                    }
+                }
+
+                .product_price {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: deeppink;
+                    padding: 2rem;
+
+                    .old_price {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: gray;
+                        text-decoration: line-through;
+                    }
+
+                    .old {
+                        color: gray;
+                        margin-right: 1rem;
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .ishere_area {
+        display: flex;
+        margin: 0 auto;
+        padding: 2.6rem 0;
+        width: 100%;
+
+        .ishere_home {
+            display: flex;
+
+            .name {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0 1rem 0 1rem;
+                color: #4F4F4F;
+            }
+        }
+    }
+
+    .products_area {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width:576px) {
+    .filter_and_count_area {
+
+        display: none !important;
+
+        .filter_area {
+            display: none;
+        }
+    }
+
+    .filter_brend_area {
+        display: none !important;
+    }
+
+    .products_section_area {
+        max-width: 125rem;
+        margin: 0 auto;
+        width: 90%;
+        padding-top: 4rem;
+
+
+        .ishere_area {
+            display: none;
+            margin: 0 auto;
+            padding: 2.6rem 0;
+            width: 100%;
+
+            .ishere_home {
+                display: flex;
+
+                .name {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin: 0 1rem 0 1rem;
+                    color: #4F4F4F;
+                }
+            }
+        }
+    }
+}
